@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.page {
+    background-image: url(../images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    padding: 50px;
+    color: #FFF;
+    height: 100vh;
+}
+.logo {
+    margin-bottom: 50px;
+    width: 200px;
+}
+.container {
+    display: flex;
+    margin-top: 0;
+}
+.mockup {
+    height: 400px;
+}
+.second {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.second h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.second p {
+    line-height: 1.5;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+.second button {
+    border: none;
+    color: hsl(257, 40%, 49%);
+    padding: 15px 55px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(95, 95, 95);
+}
+.social {
+    display: inline-block;
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+}
+.social i {
+    margin-right: 25px;
+    border: 1px solid #FFF;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media(max-width: 375px){
+    .page {
+        background-image: url(../images/bg-mobile.svg);
+        padding: 40px;
+        color: #FFF;
+        height: 100vh;
+    }
+    .logo {
+        margin-bottom: 50px;
+        width: 100px;
+    }
+    .container {
+        display: block;
+        margin-top: 0;
+        text-align: center;
+    }
+    .mockup {
+        height: 180px;
+    }
+    .second {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .second h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .second p {
+        line-height: 1.5;
+        color: #e0e0e0;
+        margin-bottom: 20px;
+    }
+    .second button {
+        border: none;
+        color: hsl(257, 40%, 49%);
+        padding: 15px 55px;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgb(95, 95, 95);
+        margin-bottom: 30px;
+    }
+    .social {
+        display: inline-block;
+        position: static;
+    }
+    .social i {
+        margin-right: 10px;
+        border: 1px solid #FFF;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
